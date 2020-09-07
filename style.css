@@ -62,6 +62,21 @@ input {
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  .js-greetings {
+    font-size: 35px;
+  }
+
+  input {
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
