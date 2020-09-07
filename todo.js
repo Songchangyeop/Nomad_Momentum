@@ -43,8 +43,14 @@ function paintToDo(text) {
   saveToDos();
 }
 
+function setId() {
+  for (let i = 0; i < toDos.length; i++) {
+    toDos[i].id = i + 1;
+  }
+}
 // submit Input
 function handleSubmit(event) {
+  setId();
   event.preventDefault();
   const currentValue = toDoInput.value;
   paintToDo(currentValue);
