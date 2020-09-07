@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="clock.js" defer></script>
     <script src="gretting.js" defer></script>
@@ -12,20 +17,22 @@
     <script src="weather.js" defer></script>
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
-    <!-- get Name -->
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
+    <section class="momentum">
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <!-- get Name -->
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
 
-    <!-- to Do List -->
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
+      <!-- to Do List -->
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+      </form>
+      <ul class="js-toDoList"></ul>
+      <span class="js-weather"></span>
+    </section>
   </body>
 </html>
