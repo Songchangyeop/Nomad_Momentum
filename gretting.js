@@ -1,6 +1,7 @@
 const form = document.querySelector('.js-form'),
   input = form.querySelector('input'),
-  greeting = document.querySelector('.js-greetings');
+  greeting = document.querySelector('.js-greetings'),
+  rebtn = document.querySelector('.Btnre');
 
 const USER_LS = 'currentUser',
   SHOWING_CN = 'showing';
@@ -20,6 +21,11 @@ function askForName() {
   form.classList.add(SHOWING_CN);
   form.addEventListener('submit', handleSubmit);
 }
+
+rebtn.addEventListener('click', () => {
+  localStorage.removeItem(USER_LS);
+  location.reload(true);
+});
 
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);

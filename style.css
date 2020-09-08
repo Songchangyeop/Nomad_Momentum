@@ -17,6 +17,11 @@ button {
   border: solid 0 white;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: teal;
+  color: aliceblue;
+}
 ul {
   padding: 0;
   list-style: none;
@@ -32,6 +37,17 @@ h1 {
   font-size: 50px;
 }
 
+.re {
+  border: solid 1 black;
+  height: 30px;
+  width: 30px;
+}
+.Btnre {
+  color: #80deea;
+  background-color: white;
+  border-radius: 30%;
+  margin-bottom: 10px;
+}
 ::placeholder {
   /* Firefox, Chrome, Opera */
   font-family: 'Source Serif Pro', serif;
